@@ -1,13 +1,18 @@
-# AX.25
+# APRS AX.25
 
-本仓库用于示范 AX.25 数据帧的构建，以备后续通信制式设计的参考需求。
+本仓库用于示范 APRS AX.25 数据帧(UI帧)的构建，以备后续通信制式设计的参考需求。
 
 ## 目录  
 
-- [APRS Formatte](https://github.com/HyacinthSat/AX.25/blob/main/APRS_Formatte.c): 预处理数据
-- [AX25 Construct](https://github.com/HyacinthSat/AX.25/blob/main/AX25_Construct.c): 构建 AX.25 帧
-- [AFSK Modulator](https://github.com/HyacinthSat/AX.25/blob/main/AFSK_Modulator.c): 生成 AFSK 基带信号
-- [WAV Encapsulation](https://github.com/HyacinthSat/AX.25/blob/main/WAV_Encapsulation.c): 将信号封装入 WAV 容器
+- [APRS Formatte](https://github.com/HyacinthSat/APRS-AX.25/blob/main/APRS_Formatte.c): 预处理数据
+- [AX25 Construct](https://github.com/HyacinthSat/APRS-AX.25/blob/main/AX25_Construct.c): 构建 AX.25 帧
+- [AFSK Modulator](https://github.com/HyacinthSat/APRS-AX.25/blob/main/AFSK_Modulator.c): 生成 AFSK 基带信号
+- [WAV Encapsulation](https://github.com/HyacinthSat/APRS-AX.25/blob/main/WAV_Encapsulation.c): 将信号封装入 WAV 容器
+
+## 功能 
+
+基本实现了APRS AX.25 数据帧的构建实现。  
+支持AFSK 300bd、AFSK 600 bd、AFSK 1200bd 及 AFSK 2400bd。  
 
 ## 编译  
 
