@@ -4,6 +4,7 @@
 
 ## 目录  
 
+- [header](https://github.com/HyacinthSat/APRS-AX.25/blob/main/header.h): 头文件
 - [APRS Formatte](https://github.com/HyacinthSat/APRS-AX.25/blob/main/APRS_Formatte.c): 预处理数据
 - [AX25 Construct](https://github.com/HyacinthSat/APRS-AX.25/blob/main/AX25_Construct.c): 构建 AX.25 帧
 - [AFSK Modulator](https://github.com/HyacinthSat/APRS-AX.25/blob/main/AFSK_Modulator.c): 生成 AFSK 基带信号
@@ -43,8 +44,9 @@ gcc APRS_Formatte.c AX25_Construct.c AFSK_Modulator.c WAV_Encapsulation.c -o apr
 
 ## 注意
 
+- **！！没有实现音频滤波器！！**
 - 目前仅保证支持gcc编译器。  
-- 目前没有实现对APRS格式的完整支持。  
+- 目前没有实现对APRS格式的完整支持。
 
 ## 许可证  
 
@@ -59,6 +61,6 @@ gcc APRS_Formatte.c AX25_Construct.c AFSK_Modulator.c WAV_Encapsulation.c -o apr
 
 - 仓库贡献者无需对使用本内容造成的任何损失或问题负责。
 
-- 其余未说明但未尽的事项。更多信息请参见：[LICENSE](https://github.com/HyacinthSat/AX.25/blob/main/LICENSE)
+- 其余未说明但未尽的事项。更多信息请参见：[LICENSE](https://github.com/HyacinthSat/APRS-AX.25/blob/main/LICENSE)
 
 **注意**：该许可证条款仅应用于本项目组所著之内容（除特有说明外），在其之外的各类内容均遵循源许可证或版权要求。
