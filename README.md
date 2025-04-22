@@ -11,12 +11,21 @@
 
 ## 编译  
 
-`gcc APRS_Formatte.c AX25_Construct.c AFSK_Modulator.c WAV_Encapsulation.c -o aprs`
+```
+gcc APRS_Formatte.c AX25_Construct.c AFSK_Modulator.c WAV_Encapsulation.c -o aprs
+```
 
 ## 用法  
 
-用法: `./aprs <'ToCall-SSID'> <'FmCall-SSID'> <'Path1-SSID,Path2-SSID'> <'INFO'> <'Output Filename'>`  
-例如: `./aprs 'BG7ZDQ' 'BI4PYM-1' 'RS0ISS,WIDE2-2' 'Test Message.' 'Output.wav'`  
+用法:  
+```
+./aprs <'ToCall-SSID'> <'FmCall-SSID'> <'Path1-SSID,Path2-SSID'> <'INFO'> <'Output Filename'>
+```  
+
+例如:  
+```
+./aprs 'BG7ZDQ' 'BI4PYM-1' 'RS0ISS,WIDE2-2' 'Test Message.' 'Output.wav'
+```  
 
 因协议的限制，呼号长度不得超过六位，路径地址不得超过八个。  
 若无路径，填写空格即可。  
