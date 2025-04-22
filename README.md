@@ -11,8 +11,14 @@
 
 ## 功能 
 
-基本实现了APRS AX.25 数据帧的构建实现。  
-支持AFSK 300bd、AFSK 600 bd、AFSK 1200bd 及 AFSK 2400bd。  
+基本实现了 APRS AX.25 数据帧的构建实现。  
+支持如下调制模式：
+- AFSK 300 bd  
+- AFSK 600 bd  
+- AFSK 1200 bd  
+- AFSK 2400 bd  
+
+默认选择AFSK 1200 bd，请在编译前在 AX25 Construct 中更改。  
 
 ## 编译  
 
