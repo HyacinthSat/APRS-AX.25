@@ -4,7 +4,27 @@
 
 ## 目录  
 
-- 暂无  
+- [APRS Formatte](https://github.com/HyacinthSat/AX.25/blob/main/APRS_Formatte.c): 预处理数据
+- [AX25 Construct](https://github.com/HyacinthSat/AX.25/blob/main/AX25_Construct.c): 构建 AX.25 帧
+- [AFSK Modulator](https://github.com/HyacinthSat/AX.25/blob/main/AFSK_Modulator.c): 生成 AFSK 基带信号
+- [WAV Encapsulation](https://github.com/HyacinthSat/AX.25/blob/main/WAV_Encapsulation.c): 将信号封装入 WAV 容器
+
+## 编译  
+
+`gcc APRS_Formatte.c AX25_Construct.c AFSK_Modulator.c WAV_Encapsulation.c -o aprs`
+
+## 用法  
+
+用法: `./aprs <'ToCall-SSID'> <'FmCall-SSID'> <'Path1-SSID,Path2-SSID'> <'INFO'> <'Output Filename'>`  
+例如: `./aprs 'BG7ZDQ' 'BI4PYM-1' 'RS0ISS,WIDE2-2' 'Test Message.' 'Output.wav'`  
+
+因协议的限制，呼号长度不得超过六位，路径地址不得超过八个。  
+若无路径，填写空格即可。  
+
+## 注意
+
+- 目前仅保证支持gcc编译器。  
+- 目前没有实现对APRS格式的完整支持。  
 
 ## 许可证  
 
